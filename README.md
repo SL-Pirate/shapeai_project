@@ -1,4 +1,4 @@
-Run main_gui.py for GUI version
+Run main.py for GUI version
 
 If you are not interested in GUI you can simply run the no_gui.py
 
