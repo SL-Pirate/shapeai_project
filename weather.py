@@ -16,7 +16,8 @@ class Weather():
         result = requests.get(req_link).json()
         return result
 
-    def quick_run(self, units='metric'):
+    def quick_run(self):
+        units='metric'
         if self.city == "":
             pass
         else:
