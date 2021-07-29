@@ -19,7 +19,7 @@ out_label = tk.Label(root, bg='#ffffff')
 out_label.place(anchor='c', relwidth=0.8, relheight=0.4, relx=0.5, rely=0.725)
 
 def get_weather_init(location):
-    get_weather = weather.Weather(location, api)#, units='metric')
+    get_weather = weather.Weather(location, api)
     output = get_weather.quick_run()
     out_label.config(text=output)
 
