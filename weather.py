@@ -2,9 +2,9 @@ import requests
 
 class Weather():
 
-    def __init__(self, city, units=None):
+    def __init__(self, city, api, units=None):
         self.city = city
-        self.api = '857da17a4a663a880b6369b38ecd6501'
+        self.api = api
         self.units = units
 
     def run(self):
@@ -17,7 +17,7 @@ class Weather():
         return result
 
     def quick_run(self):
-        units='metric'
+        units = 'metric'
         if self.city == "":
             pass
         else:
