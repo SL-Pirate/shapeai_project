@@ -26,9 +26,6 @@ def get_weather_init(location):
 run_button = tk.Button(root, text='Get weather', bg='#2AB0E7', font=('courier', 15), command=lambda:get_weather_init(get_entry.get()))
 run_button.place(anchor='c', relx=0.5, rely=0.4)
 
-def test(msg):
-    out_label.config(text=f'Worked\nmessage: {msg}')
-
 get_entry.bind('<Return>', lambda i:get_weather_init(get_entry.get()))
 
 get_entry.focus()
